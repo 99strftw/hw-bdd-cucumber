@@ -24,7 +24,12 @@ Background: movies have been added to database
 Scenario: sort movies alphabetically
   When I follow "Movie Title"
   # your steps here
+  Then sort movies alphabetically
+  And I should see Movies listed alphabetically
 
 Scenario: sort movies in increasing order of release date
   When I follow "Release Date"
   # your steps here
+  Then sort Movies by release date
+  And I should see Movies listed chronologically
+  
